@@ -1,6 +1,6 @@
-body {
+/* body {
     margin: 0 150px;
-}
+} */
 
 h1,
 h2,
@@ -8,21 +8,64 @@ h3 {
     font-family: 'Unbounded', cursive;
 }
 
+h1 {
+    font-size: 45px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 30px;
+    color: #45526e;
+}
+
+h3 {
+    font-size: 25px;
+    color: #757575;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.nav-wrapper {
+    margin: 0 200px;
+
+}
+
+.hero-wrapper {
+    display: block;
+    margin: auto 0;
+    margin: 75px 150px;
+}
+
+.hero-social {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 p {
     font-family: 'Poppins', sans-serif;
 }
 
 .nav-social {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+.hero-icon {
+    width: 60px;
     margin: 0 5px;
 }
 
 .nav-link {
-    line-height: 16px;
-    margin-right: 20px;
+    line-height: 25px;
+    margin-right: 30px;
+    font-size: 20px;
 }
 
 .nav-link:hover {
     color: #ED5A11;
+}
+
+.hero-image-homepage {
+    border-radius: 100%;
 }
