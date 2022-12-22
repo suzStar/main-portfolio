@@ -1,6 +1,11 @@
-/* body {
-    margin: 0 150px;
-} */
+body {
+    background-color: white;
+    background-image: url(../../images/sfs-logo.png);
+}
+
+@media {
+    --accent-color
+}
 
 h1,
 h2,
@@ -46,9 +51,32 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-.nav-social {
+
+
+.figure {
+    position: relative;
+    width: 100%;
+}
+
+.figure img {
+    display: block;
     width: 50px;
     margin: 0 5px;
+}
+
+.figure .nav-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.figure:hover .nav-hover {
+    opacity: 1;
 }
 
 .hero-icon {
