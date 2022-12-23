@@ -1,10 +1,14 @@
+:root {
+    --primary-color: #212529;
+    --accent-color: #ED5A11;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
 body {
     background-color: white;
     background-image: url(../../images/sfs-logo.png);
-}
-
-@media {
-    --accent-color
 }
 
 h1,
@@ -14,7 +18,7 @@ h3 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 70px;
     color: #333333;
 }
 
@@ -26,7 +30,7 @@ h2 {
 h3 {
     font-size: 25px;
     color: #757575;
-    text-align: center;
+    text-align: left;
     margin-top: 60px;
 }
 
@@ -51,6 +55,11 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+
+.main-content {
+    margin-top: 100px;
+    margin-bottom: -40px;
+}
 
 
 .figure {
@@ -91,9 +100,104 @@ p {
 }
 
 .nav-link:hover {
-    color: #ED5A11;
+    color: var(--accent-color);
 }
 
 .hero-image-homepage {
     border-radius: 100%;
+}
+
+.navigation-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.navigation-links a {
+    margin: 20px;
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.contact-link {
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+}
+
+.primary-link {
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.primary-link:hover {
+    color: var(--accent-color);
+}
+
+
+
+.about-link {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+}
+
+.about-paragraphs {
+    display: flex;
+    margin: 30px 0;
+}
+
+.about-paragraphs p {
+    margin: 10px;
+}
+
+.email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 576px) {
+    .main-content {
+        margin-top: 100px;
+        margin-bottom: -40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .primary-link {
+        display: block;
+        text-align: center;
+        margin: 0 25px;
+    }
 }
