@@ -1,10 +1,8 @@
 :root {
     --primary-color: #212529;
     --accent-color: #ED5A11;
-    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --border-color: #21252990;
 }
-
-
 
 body {
     background-color: white;
@@ -154,8 +152,39 @@ h3 {
     text-decoration: none;
 }
 
-.email-link:hover {
-    text-decoration: underline;
+.dropdown {
+    position: relative;
+    display: block;
+    margin: 0 auto 70px;
+}
+
+.dropdown-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.dropdown-content a {
+    opacity: 1;
+    color: black;
+    padding: 25px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown-content a:hover {
+    color: var(--accent-color);
+    background: whitesmoke;
+    transition: opacity .2s;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    display: inline-block;
+
 }
 
 @media(max-width: 576px) {
