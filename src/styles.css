@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 65px;
     color: #333333;
 }
 
@@ -33,11 +33,6 @@ h3 {
     color: #757575;
     text-align: left;
     margin-top: 60px;
-}
-
-.nav-wrapper {
-    margin: 0 200px;
-
 }
 
 .hero-wrapper {
@@ -150,15 +145,6 @@ h3 {
     text-align: center;
     display: block;
 }
-
-.about-paragraphs {
-    display: flex;
-    margin: 30px 0;
-}
-
-/* .about-paragraphs p {
-    margin: 10px;
-} */
 
 .email-link {
     display: flex;
