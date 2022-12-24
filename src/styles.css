@@ -1,13 +1,15 @@
 :root {
-    --primary-color: #212529;
+    --primary-color: #252a25;
+    --secondary-color: #3F444B;
     --accent-color: #ED5A11;
-    --border-color: #21252990;
+    --border-color: #252a2590;
 }
 
 body {
     background-color: white;
     background-image: url(../../images/sfs-logo.png);
     font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
 }
 
 h1,
@@ -18,18 +20,16 @@ h3 {
 
 h1 {
     font-size: 65px;
-    color: #333333;
 }
 
 h2 {
     font-size: 30px;
-    color: #45526e;
+    color: var(--secondary-color);
 }
 
 h3 {
     font-size: 25px;
-    color: #757575;
-    text-align: left;
+    color: var(--secondary-color) text-align: left;
     margin-top: 60px;
 }
 
@@ -39,31 +39,23 @@ h3 {
     margin: 75px 150px;
 }
 
-.hero-social {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-
 .main-content {
     margin-top: 100px;
     margin-bottom: -40px;
 }
 
-
-.figure {
+.social-icon {
     position: relative;
     width: 100%;
 }
 
-.figure img {
+.social-icon img {
     display: block;
     width: 50px;
     margin: 0 5px;
 }
 
-.figure .nav-hover {
+.social-icon .nav-hover {
     position: absolute;
     top: 0;
     right: 0;
@@ -74,8 +66,14 @@ h3 {
     transition: opacity .2s;
 }
 
-.figure:hover .nav-hover {
+.social-icon:hover .nav-hover {
     opacity: 1;
+}
+
+.hero-social {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-icon {
@@ -131,13 +129,6 @@ h3 {
     color: var(--accent-color);
 }
 
-
-
-.about-link {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
-
 .homepage-link {
     color: var(--primary-color);
     text-align: center;
@@ -150,6 +141,10 @@ h3 {
     color: var(--primary-color);
     font-size: 28px;
     text-decoration: none;
+}
+
+.email-link:hover {
+    color: var(--accent-color);
 }
 
 .dropdown {
@@ -184,7 +179,6 @@ h3 {
 .dropdown:hover .dropdown-content {
     opacity: 1;
     display: inline-block;
-
 }
 
 @media(max-width: 576px) {
@@ -211,5 +205,9 @@ h3 {
         display: block;
         text-align: center;
         margin: 0 25px;
+    }
+
+    .email-link {
+        font-size: 20px;
     }
 }
