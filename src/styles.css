@@ -46,13 +46,17 @@ h3 {
 
 .social-icon {
     position: relative;
-    width: 100%;
+}
+
+.footer-icon {
+    width: 45px;
+    margin: 0 7px;
 }
 
 .social-icon img {
     display: block;
-    width: 50px;
-    margin: 0 5px;
+    width: 40px;
+    margin: 0 7px;
 }
 
 .social-icon .nav-hover {
@@ -74,11 +78,6 @@ h3 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-}
-
-.hero-icon {
-    width: 60px;
-    margin: 0 5px;
 }
 
 .nav-link {
