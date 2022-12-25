@@ -209,4 +209,13 @@ h3 {
     .email-link {
         font-size: 20px;
     }
+
+    .dropdown {
+        margin: 0 auto 90px;
+    }
+
+    .dropdown-content a {
+        inline-size: 150px;
+        overflow-wrap: break-word;
+    }
 }
