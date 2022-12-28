@@ -239,11 +239,15 @@ ul {
 
     h1 {
         font-size: 50px;
+        overflow-wrap: break-word;
+
     }
 
     h2 {
         font-size: 30px;
         margin-bottom: 15px;
+        overflow-wrap: break-word;
+
     }
 
     h3 {
