@@ -3,6 +3,11 @@
     --secondary-color: #3F444B;
     --accent-color: #ED5A11;
     --border-color: #252a2590;
+    --pie-color: #252a2535;
+
+    --p: 100;
+    --b: 10px;
+    --w: 150px;
 }
 
 body {
@@ -10,6 +15,7 @@ body {
     background-image: url(../../images/sfs-logo.png);
     font-family: 'Poppins', sans-serif;
     color: var(--primary-color);
+    text-transform: lowercase;
 }
 
 h1,
@@ -29,9 +35,16 @@ h2 {
 
 h3 {
     font-size: 25px;
-    color: var(--secondary-color) text-align: left;
+    color: var(--secondary-color);
+    text-align: left;
     margin-top: 60px;
 }
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
 
 .hero-wrapper {
     display: block;
@@ -114,7 +127,7 @@ h3 {
     color: white;
 }
 
-.primary-link {
+.cta-link {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
@@ -124,7 +137,7 @@ h3 {
     text-transform: capitalize;
 }
 
-.primary-link:hover {
+.cta-link:hover {
     color: var(--accent-color);
 }
 
@@ -137,7 +150,7 @@ h3 {
 .email-link {
     display: flex;
     justify-content: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 28px;
     text-decoration: none;
 }
@@ -180,6 +193,50 @@ h3 {
     display: inline-block;
 }
 
+
+.pie {
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pie:before {
+    inset: 0;
+    background:
+        radial-gradient(farthest-side, var(--accent-color) 98%, transparent) top/var(--b) var(--b) no-repeat,
+        conic-gradient(var(--accent-color) calc(var(--p)*1%), var(--pie-color) 0);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, transparent calc(99% - var(--b)), transparent calc(100% - var(--b)));
+}
+
+.pie:after {
+    inset: calc(50% - var(--b)/2);
+    background: var(--accent-color);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.animate {
+    animation: p 1s .5s both;
+}
+
+@keyframes p {
+    from {
+        --p: 0
+    }
+}
+
 @media(max-width: 576px) {
     .main-content {
         margin-top: 100px;
@@ -200,7 +257,7 @@ h3 {
         text-align: left;
     }
 
-    .primary-link {
+    .cta-link {
         display: block;
         text-align: center;
         margin: 0 25px;
