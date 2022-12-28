@@ -45,7 +45,6 @@ ul {
     margin-left: 0;
 }
 
-
 .hero-wrapper {
     display: block;
     margin: auto 0;
@@ -59,11 +58,7 @@ ul {
 
 .social-icon {
     position: relative;
-}
-
-.footer-icon {
-    width: 45px;
-    margin: 0 7px;
+    margin: auto 0;
 }
 
 .social-icon img {
@@ -74,10 +69,7 @@ ul {
 
 .social-icon .nav-hover {
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    inset: 0;
     object-fit: contain;
     opacity: 0;
     transition: opacity .2s;
@@ -97,10 +89,6 @@ ul {
     line-height: 25px;
     margin-right: 30px;
     font-size: 20px;
-}
-
-.nav-link:hover {
-    color: var(--accent-color);
 }
 
 .hero-image-homepage {
@@ -137,7 +125,8 @@ ul {
     text-transform: capitalize;
 }
 
-.cta-link:hover {
+.cta-link:hover,
+.nav-link:hover {
     color: var(--accent-color);
 }
 

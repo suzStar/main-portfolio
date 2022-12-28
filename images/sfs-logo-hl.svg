@@ -2,12 +2,11 @@
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.54 373.44">
   <defs>
     <style>
-      .cls-1 {
-        fill: #eaeaea;
+      .cls-1, .cls-2 {
+        fill: #ed5a11;
       }
 
       .cls-2 {
-        fill: #ed5a11;
         fill-rule: evenodd;
       }
     </style>
