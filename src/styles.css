@@ -55,9 +55,17 @@ ul {
     margin-bottom: -40px;
 }
 
-.social-icon {
+
+
+.social-icon,
+.brand-logo {
     position: relative;
     margin: auto 0;
+}
+
+.brand-logo img {
+    height: 60px;
+    width: 60px;
 }
 
 .social-icon img {
@@ -66,7 +74,8 @@ ul {
     margin: 0 7px;
 }
 
-.social-icon .nav-hover {
+.social-icon .nav-hover,
+.brand-logo .nav-hover {
     position: absolute;
     inset: 0;
     object-fit: contain;
@@ -74,7 +83,8 @@ ul {
     transition: opacity .2s;
 }
 
-.social-icon:hover .nav-hover {
+.social-icon:hover .nav-hover,
+.brand-logo:hover .nav-hover {
     opacity: 1;
 }
 
@@ -191,7 +201,7 @@ ul {
     content: "";
     position: absolute;
     border-radius: 50%;
-    
+
 }
 
 .pie:before {
@@ -201,7 +211,7 @@ ul {
         conic-gradient(var(--accent-color) calc(var(--p)*1%), var(--pie-color) 0);
     -webkit-mask: radial-gradient(farthest-side, transparent calc(99% - var(--b)), #000 calc(100% - var(--b)));
     mask: radial-gradient(farthest-side, transparent calc(99% - var(--b)), transparent calc(100% - var(--b)));
-    
+
 }
 
 .pie:after {
