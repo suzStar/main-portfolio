@@ -209,7 +209,7 @@ ul {
     background:
         radial-gradient(farthest-side, var(--accent-color) 98%, rgba(0, 0, 0, 0)) top/var(--b) var(--b) no-repeat,
         conic-gradient(var(--accent-color) calc(var(--p)*1%), var(--pie-color) 0);
-    /* -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b))); */
+    -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
     /* mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), rgba(0, 0, 0, 0) calc(100% - var(--b))); */
 
 }
