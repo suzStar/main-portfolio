@@ -196,13 +196,13 @@ ul {
     font-size: 17px;
 }
 
-/* .pie:before,
+.pie:before,
 .pie:after {
     content: "";
     position: absolute;
     border-radius: 50%;
 
-} */
+}
 
 /* .pie:before {
     inset: 0;
