@@ -220,16 +220,16 @@ ul {
     transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
 }
 
-.animate {
+/* .animate {
 
     animation: p 1s .5s both;
-}
+} */
 
-@keyframes p {
+/* @keyframes p {
     from {
         --p: 0
     }
-}
+} */
 
 @media(max-width: 576px) {
     .main-content {
