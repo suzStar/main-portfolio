@@ -214,11 +214,11 @@ ul {
 
 } */
 
-/* .pie:after {
+.pie:after {
     inset: calc(50% - var(--b)/2);
     background: var(--accent-color);
     transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
-} */
+}
 
 .animate {
 
