@@ -55,8 +55,6 @@ ul {
     margin-bottom: -40px;
 }
 
-
-
 .social-icon,
 .brand-logo {
     position: relative;
@@ -225,6 +223,73 @@ ul {
     animation: p 1s .5s both;
 }
 
+.panel-container {
+    margin: 50px auto;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    height: 80vh;
+    cursor: pointer;
+    border-radius: 10px;
+    flex: 0.5;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    position: relative;
+    transition: flex 0.7s ease-in-out;
+}
+
+.panel h3 {
+    position: absolute;
+    top: -5%;
+    z-index: 5;
+    opacity: 0;
+}
+
+.panel p {
+    color: var(--accent-color);
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 5;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.7s;
+}
+
+.panel.active p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.6s;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.panel.active img {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+}
+
 @keyframes p {
     from {
         --p: 0
@@ -276,5 +341,14 @@ ul {
     .dropdown-content a {
         inline-size: 150px;
         overflow-wrap: break-word;
+    }
+
+    .panel-container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
     }
 }
